@@ -14,3 +14,5 @@ Para saber como as coisas funcionam é clonar o repositório e instalar:
 Depois subir a aplicação `ng serve`.
 
 Todo componente está na pasta `src > app > module > rich-text-editor`.
+
+**Demo**: [https://ngx-simple-rich-text-editor.vercel.app/](https://ngx-simple-rich-text-editor.vercel.app/)
