@@ -9,6 +9,8 @@ Você pode usar o componente (Angular) para projetos simples ou usar como ponto 
 ## Instalação
 
 Para saber como as coisas funcionam é clonar o repositório e instalar: 
-`npm install`
+`npm install`.
+
+Depois subir a aplicação `ng serve`.
 
 Todo componente está na pasta `src > app > module > rich-text-editor`.
