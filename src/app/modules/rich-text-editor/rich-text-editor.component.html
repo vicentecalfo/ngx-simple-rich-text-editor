@@ -1,0 +1,21 @@
+<div class="srt-editor">
+  <div class="srt-editor-toolbar">
+    <ul>
+      <ng-container *ngFor="let button of formatButtons">
+        <li>
+          <button (click)="format(button.command,$event)"><i class="{{button.icon}}"></i></button>
+        </li>
+      </ng-container>
+      <li class="srt-url-input">
+        <input type="text" placeholder="Url" #fieldUrl />
+      </li>
+      <li>
+        <button (click)="insertUrl(fieldUrl, 'link')"><i class="fas fa-link"></i></button>
+      </li>
+      <li>
+        <button (click)="insertUrl(fieldUrl, 'image')"><i class="far fa-image"></i></button>
+      </li>
+    </ul>
+  </div>
+  <div class="srt-editor-content" contenteditable="true" id="srt-editor" #editor (blur)="output()"></div>
+</div>
