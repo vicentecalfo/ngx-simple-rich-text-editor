@@ -39,8 +39,8 @@ export class RichTextEditorComponent implements OnInit {
 
 	ngOnInit(): void {}
 
-	format(style: string, value: any) {
-		this.document.execCommand(style, false, value);
+	format(style: string) {
+		this.document.execCommand(style, false);
 	}
 
 	insertUrl(fieldUrl: HTMLInputElement, type = 'link') {

@@ -3,7 +3,7 @@
     <ul>
       <ng-container *ngFor="let button of formatButtons">
         <li>
-          <button (click)="format(button.command,$event)"><i class="{{button.icon}}"></i></button>
+          <button (click)="format(button.command)"><i class="{{button.icon}}"></i></button>
         </li>
       </ng-container>
       <li class="srt-url-input">
